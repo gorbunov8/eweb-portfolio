@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import Button from "react-bootstrap/Button";
 
 export default function Profile() {
   return (
@@ -35,12 +36,27 @@ export default function Profile() {
               {" "}
               <h1>
                 <Typical
-                  steps={["Software Engineer", 1000, "Product Designer", 1000, "Student", 1000]}
+                  steps={[
+                    "Software Engineer",
+                    1000,
+                    "Product Designer",
+                    1000,
+                    "Student",
+                    1000,
+                    "Minimalist",
+                    500,
+                  ]}
                   loop={Infinity}
                   wrapper="p"
                 />
               </h1>
             </span>
+          </div>
+          <div className="profile-options">
+            <Button class='custom-button' variant="outline-dark">Hire Me</Button>
+            <a href ='cv.pdf' target="_blank">
+            <Button class='custom-button' variant="outline-dark">Download CV</Button>
+            </a>
           </div>
         </div>
       </div>
