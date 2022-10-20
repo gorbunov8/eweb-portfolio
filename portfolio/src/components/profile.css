@@ -1,3 +1,79 @@
-.custom-button {
-    size:0ch !important;
+.profile-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  background-image: url("../assets/img/banner-bg.png");
+}
+
+.profile-parent {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+
+.profile-details-name {
+  font-size: 24px;
+  font-family: "ContraNo2-Book" s;
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+  font-size: 40px;
+  font-family: "ContraNo2-Book";
+}
+
+.primary-text {
+  color: (--white);
+}
+
+.highlighted-text {
+  color: #ff5823;
+}
+
+.profile-options .primary-btn {
+  margin: 0 0 0 28px;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 var(--white);
+  border-radius: 90%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+
+.profile-picture-background {
+  height: 80%;
+  width: 92%;
+  background-image: url("../assets/img/header-img.svg");
+  background-size: cover;
+  border-radius: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+.colz .colz-icon i {
+  color: white;
+  padding: 8px;
+  padding-left: 15px;
+}
+
+.colz .colz-icon i:hover {
+  transform: scale(1.5);
 }

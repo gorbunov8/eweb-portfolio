@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import Button from "react-bootstrap/Button";
+import './Profile.css';
 
 export default function Profile() {
   return (
@@ -8,23 +8,24 @@ export default function Profile() {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
-            <a href="https://github.com/gorbunov8" target="_blank">
-              <i className="fa fa-github-square"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/vladyslavgorbunov/"
-              target="_blank"
-            >
-              <i className="fa fa-linkedin-square"></i>
-            </a>
-            <a
-              href="https://www.xing.com/profile/Vladyslav_Gorbunov/cv"
-              target="_blank"
-            >
-              <i className="fa fa-xing-square"></i>
-            </a>
+            <div className="colz-icon">
+              <a href="https://github.com/gorbunov8" target="_blank">
+                <i className="fa fa-github-square"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vladyslavgorbunov/"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin-square"></i>
+              </a>
+              <a
+                href="https://www.xing.com/profile/Vladyslav_Gorbunov/cv"
+                target="_blank"
+              >
+                <i className="fa fa-xing-square"></i>
+              </a>
+            </div>
           </div>
-
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
@@ -53,11 +54,14 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <Button class='custom-button' variant="outline-dark">Hire Me</Button>
-            <a href ='cv.pdf' target="_blank">
-            <Button class='custom-button' variant="outline-dark">Download CV</Button>
+            <button className="primary-btn">Hire Me</button>
+            <a href="cv.pdf" target="_blank">
+              <button className="primary-btn">Download CV</button>
             </a>
           </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
