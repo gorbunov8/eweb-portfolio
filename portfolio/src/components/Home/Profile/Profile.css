@@ -5,7 +5,6 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url("../assets/img/banner-bg.png");
 }
 
 .profile-parent {
@@ -61,7 +60,7 @@
 .profile-picture-background {
   height: 80%;
   width: 92%;
-  background-image: url("../assets/img/header-img.svg");
+  background-image: url("../../../assets/img/header-img.svg");
   background-size: cover;
   border-radius: 90%;
   background-repeat: no-repeat;
@@ -130,5 +129,16 @@
   }
   .profile-options {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .profile-details {
+    width: 90%;
   }
 }
