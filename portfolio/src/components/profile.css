@@ -30,6 +30,11 @@
   font-family: "ContraNo2-Book";
 }
 
+.profile-options {
+  display: flex;
+  align-items: center;
+}
+
 .primary-text {
   color: (--white);
 }
@@ -39,7 +44,7 @@
 }
 
 .profile-options .primary-btn {
-  margin: 0 0 0 28px;
+  margin: 0 10px 0 10px;
 }
 
 .profile-picture {
@@ -76,4 +81,54 @@
 
 .colz .colz-icon i:hover {
   transform: scale(1.5);
+}
+
+/* Responsiveness for iPad Pro */
+@media screen and (max-width: 111px) {
+  .profile-picture {
+    margin: 0 0px 0 80px;
+  }
+
+  .profile-details-name {
+    font-size: 20px;
+  }
+
+  .profile-details-role .primary-text {
+    font-size: 12px;
+  }
+
+  .profile-options .primary-btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+/* Responsesiveness for Mobiles */
+@media screen and (max-width: 910px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profile-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-details {
+    margin: 25px 0 0;
+  }
+  .profile-options {
+    text-align: center;
+  }
 }
