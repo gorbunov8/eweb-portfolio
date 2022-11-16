@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/eweb-portfolio/static/css/main.cfc91575.css",
+    "main.js": "/eweb-portfolio/static/js/main.b92d47aa.js",
+    "static/js/787.1ed0c42c.chunk.js": "/eweb-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/banner-bg.png": "/eweb-portfolio/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/header-img.svg": "/eweb-portfolio/static/media/header-img.84bf93eb20488a753440.svg",
+    "static/media/CentraNo2-Bold.ttf": "/eweb-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/eweb-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/eweb-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/element.png": "/eweb-portfolio/static/media/element.d0bbc8cbbb5b0545c0e9.png",
+    "index.html": "/eweb-portfolio/index.html",
+    "main.cfc91575.css.map": "/eweb-portfolio/static/css/main.cfc91575.css.map",
+    "main.b92d47aa.js.map": "/eweb-portfolio/static/js/main.b92d47aa.js.map",
+    "787.1ed0c42c.chunk.js.map": "/eweb-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfc91575.css",
+    "static/js/main.b92d47aa.js"
+  ]
+}
