@@ -58,8 +58,8 @@
 }
 
 .profile-picture-background {
-  height: 80%;
-  width: 92%;
+  height: 70%;
+  width: 80%;
   background-image: url("../../../assets/img/header-img.svg");
   background-size: cover;
   border-radius: 90%;
