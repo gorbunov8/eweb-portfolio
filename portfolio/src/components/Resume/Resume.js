@@ -45,7 +45,7 @@ const Resume = (props) => {
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
     { label: "Ausbildung", logoSrc: "education.svg" },
-    { label: "Arbeitserfahrung", logoSrc: "work-history.svg" },
+    { label: "Letzte Arbeitserfahrung", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projekte", logoSrc: "projects.svg" },
     { label: "Interessen", logoSrc: "interests.svg" },
@@ -57,16 +57,16 @@ const Resume = (props) => {
     { skill: "HTML / CSS", ratingPercentage: 80 },
     { skill: "JavaScript", ratingPercentage: 70 },
     { skill: "React JS", ratingPercentage: 70 },
-    { skill: "Typescript", ratingPercentage: 45 },
+    { skill: "Typescript", ratingPercentage: 35 },
     { skill: "Angular", ratingPercentage: 45 },
-    { skill: "Firebase DB", ratingPercentage: 80 },
-    { skill: "Mongo DB", ratingPercentage: 80 },
+    { skill: "SQL", ratingPercentage: 40 },
+    { skill: "Mongo DB", ratingPercentage: 60 },
   ];
 
   const projectsDetails = [
     {
-      title: "Eigene Portfolio Website ",
-      duration: { fromDate: "04.2022", toDate: "05.2022" },
+      title: "React JS Portfolio Website ",
+      duration: { fromDate: "10.2022", toDate: "12.2022" },
       description:
         "React-Portfolio-Website zum alle wichtige Informationen über meine Persönlichkeit an einem Ort darstellen.",
       subHeading: "Angewendete Technologie: React JS, Bootsrap",
@@ -82,7 +82,7 @@ const Resume = (props) => {
       title: "e-form.sg ",
       duration: { fromDate: "04.2022", toDate: "derzeitig" },
       description:
-        " Webplatform, die studiumbegleitend für Steuerverwaltung der Kanton St.Gallen mit hilfe von Wordpress entwickelt wird und den steuerpflichtigen Personen eine digitale Formular- und Gesuchabgabe ermöglicht.",
+        "Webplatform, die studiumbegleitend für Steuerverwaltung der Kanton St.Gallen mit hilfe von Wordpress entwickelt wird und den steuerpflichtigen Personen eine digitale Formular- und Gesuchabgabe ermöglicht.",
       subHeading: "Angewendete Technologie:  Wordpress, HTML.",
     },
   ];
@@ -91,7 +91,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"Berner Fachhochschule"}
-        subHeading={"BACHELOR OF SCIENCE Wirtschaftsinformatik"}
+        subHeading={"i.A. B.Sc. Wirtschaftsinformatik"}
         fromDate={"09.2020"}
         toDate={"derzeitig"}
       />
@@ -114,28 +114,56 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Freelancing"}
-          subHeading={"FULL STACK DEVELOPER"}
-          fromDate={"2022"}
-          toDate={"derzeitig"}
+          heading={"IT Consultant"}
+          subHeading={"Digitalization & Innovation Services"}
+          fromDate={"11.2022"}
+          toDate={"befristet"}
         />
-        <div className="experience-description">
+        {/*         <div className="experience-description">
           <span className="resume-description-text">
             Aktuell arbeite an der Projekten
           </span>
-        </div>
+        </div> */}
         <div className="experience-description">
           <span className="resume-description-text">
-            - Entwickelte dies und das
+            • Steuerung, Verwaltung sowie Programmierung ERP-System
           </span>
           <br />
           <span className="resume-description-text">
-            - Auch hier habe ich etwas entwickelt{" "}
+            • Umsetzung der Cloud Projekten
+          </span>
+          <br />
+        </div>
+      </div>
+      <br />
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Weiterbildung & Stellensuche"}
+          subHeading={
+            "Stellensuche im Bereich: IT Consulting /  Software Entwicklung"
+          }
+          fromDate={"04.2022"}
+          toDate={"10.2022"}
+        />
+      </div>
+      <br />
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"IT Teamleiter"}
+          subHeading={"Projekt Management & Wartung Infrastruktur"}
+          fromDate={"11.2021"}
+          toDate={"04.2022"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            • Umsetzung IT Betriebsbezogene Projekte
           </span>
           <br />
           <span className="resume-description-text">
-            - Waiterbildung auch erwähnen
+            • Wartung der Infrastruktur
           </span>
+          <br />
           <br />
         </div>
       </div>
@@ -176,18 +204,11 @@ const Resume = (props) => {
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
-      <ResumeHeading
-        heading="Schwimmen"
-        description="Schwimmen als anspruchsvolle Ausgleich zum Alltag."
-      />
-      <ResumeHeading
-        heading="Sound Design"
-        description="Leistungsfähige Home Studio als mentale Entlastund und Förderung der Kreativität."
-      />
-      <ResumeHeading
-        heading="Outdoor Aktivitäten"
-        description="Vor allem bei schönem Wetter macht es mir viel Spass mit meinen Kollegen oder auch alleine die Natur geniessen."
-      />
+      <ResumeHeading heading="Schwimmen" />
+      <ResumeHeading heading="Sound Design" />
+      <ResumeHeading heading="Outdoor Aktivitäten" />
+      <ResumeHeading heading="Lesen" />
+      <ResumeHeading heading="Drohne pilotieren" />
     </div>,
   ];
 

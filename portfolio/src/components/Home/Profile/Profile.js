@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import './Profile.css';
+import "./Profile.css";
 
 export default function Profile() {
   return (
@@ -55,7 +55,11 @@ export default function Profile() {
           </div>
           <div className="profile-options">
             <button className="primary-btn">Hire Me</button>
-            <a href="cv.pdf" target="_blank">
+            <a
+              href="../../../assets/doc/cv.pdf"
+              download="test"
+              target="_blank"
+            >
               <button className="primary-btn">Download CV</button>
             </a>
           </div>
