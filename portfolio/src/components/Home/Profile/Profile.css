@@ -82,6 +82,7 @@
   transform: scale(1.5);
 }
 
+
 /* Responsiveness for iPad Pro */
 @media screen and (max-width: 111px) {
   .profile-picture {

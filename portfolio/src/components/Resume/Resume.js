@@ -266,7 +266,7 @@ const Resume = (props) => {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={"Lebenslauf"} subHeading={"Über mich"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

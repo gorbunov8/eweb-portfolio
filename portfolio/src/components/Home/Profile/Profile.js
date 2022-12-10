@@ -29,7 +29,7 @@ export default function Profile() {
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello, I'm <span className="highlighted-text">Vladyslav</span>
+              Hallo, Ich bin <span className="highlighted-text">Vladyslav</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -40,12 +40,12 @@ export default function Profile() {
                   steps={[
                     "Software Engineer",
                     1000,
-                    "Product Designer",
-                    1000,
-                    "Student",
+                    "IT Consultant",
                     1000,
                     "Minimalist",
-                    500,
+                    1000,
+                    "Student",
+                    5000,
                   ]}
                   loop={Infinity}
                   wrapper="p"
@@ -54,13 +54,13 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="primary-btn">Hire Me</button>
+            <button className="primary-btn">Kontakt</button>
             <a
               href="../../../assets/doc/cv.pdf"
               download="test"
               target="_blank"
             >
-              <button className="primary-btn">Download CV</button>
+              <button className="primary-btn">Lebenslauf</button>
             </a>
           </div>
         </div>
