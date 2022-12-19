@@ -16,7 +16,7 @@ export default class ScrollService {
   }
 
   /* SCROLL TO HIRE ME / CONTACT ME SCREEN */
-/*   scrollToHireMe = () => {
+   scrollToHireMe = () => {
     let contactMeScreen = document.getElementById("ContactMe");
     if (!contactMeScreen) return;
 
@@ -27,7 +27,7 @@ export default class ScrollService {
     if (!homeScreen) return;
 
     homeScreen.scrollIntoView({ behavior: "smooth" });
-  }; */
+  }; 
 
   /* CHECK IF ELEMENT IS IN VIEW .this simply means if the document appears fully on the screen or not */
   isElementInView = (elem, type) => {
